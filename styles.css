@@ -17,11 +17,6 @@
     transition: .3s;
 }
 
-.mainController i:hover{
-    color: #333;
-    transform: rotate(180deg);
-}
-
 .bpm input{
     margin: 20px;
     width: 40px;
@@ -31,7 +26,6 @@
 }
 
 .stepSequencer{
-    padding: 20px;
     background: rgb(68, 134, 136);
     width: 700px;
 }
@@ -133,9 +127,3 @@
     margin-top: 10px;
     cursor: pointer;
 }
-
-
-
-
-
-

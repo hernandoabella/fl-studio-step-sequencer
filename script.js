@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
         'https://dl.dropbox.com/s/qxxin4mp8vx7jjz/hat.mp3',
         'https://dl.dropbox.com/s/2qr51pdek4jyx68/snare.mp3'
     ];
-   
+
     let play = document.querySelector('.play');
     let pause = document.querySelector('.pause');
     let stop = document.querySelector('.stop');
