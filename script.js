@@ -1,3 +1,17 @@
+// 60 bpm significa que 60 beats tocaran en un minuto. en tu aplicacion 4 pasos son iguales a 1 beat por lo tanto 240 pasos tocaran cada minuto. 120 bpm significa 120 beats por minuto, 480 pasos por minuto.
+
+// Con esta maetamatica puedes hacerlo facilmente ahora :)
+
+// Para que se toque varias veces en secuencia () usa un retraso (delay) como setTimeout, fetch falso, o usa un requestnimationFrame y limita/retrasa los frames.
+
+// Settimeout es el mas facil desde que tu el tiempo de tu aplicacion no se relacion con animaciones.
+
+let bpm, steps;
+
+bpm = 60;
+steps = bpm / 60;
+
+
 function initPatSquareToggle() {
     let elements = document.querySelectorAll('.patSquare');
     elements.forEach(function(e) {

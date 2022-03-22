@@ -4,8 +4,23 @@
     font-family: 'Rubik', sans-serif;
 }
 
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+    background-repeat: no-repeat;
+    height: 97.5vh;
+}
+
+.stepSequencer{
+    background: rgb(68, 134, 136);
+    width: 350px;
+    
+}
+
 .mainController{
-    background: rgb(0, 87, 128);
+    background: #5128b0;
     display: flex;
 }
 
@@ -17,17 +32,21 @@
     transition: .3s;
 }
 
+.stepContainer{
+    padding: 10px;
+}
+
 .bpm input{
     margin: 20px;
-    width: 40px;
     border: none;
     outline: none;
+    width: 60px;
     text-align: center;
 }
 
-.stepSequencer{
-    background: rgb(68, 134, 136);
-    width: 700px;
+.bpm span{
+    color: #fff;
+    font-weight: bold;
 }
 
 .stepLine{
@@ -42,14 +61,14 @@
     border-radius: 100px;
     border: 1px solid #000;
     position: relative;
-    top: 10px;
+    top: 7.5px;
     box-shadow: 0px 0px 10px 0px greenyellow;
     cursor: pointer;
 }
 
 .volKnob{
-    width: 15px;
-    height: 15px;
+    width: 10px;
+    height: 10px;
     background: rgb(51, 50, 50);
     position: relative;
     top: 8px;
@@ -61,8 +80,8 @@
 }
 
 .panKnob{
-    width: 15px;
-    height: 15px;
+    width: 10px;
+    height: 10px;
     background: rgb(51, 50, 50);
     position: relative;
     top: 8px;
@@ -70,15 +89,13 @@
     border-radius: 100px;
     border: 1px solid #000;
     cursor: pointer;
-
-
 }
 
 .stepSound{
     color: #fff;
     background: rgb(51, 50, 50);
     padding: 10px;
-    width: 100px;
+    width: 40px;
     position: relative;
     right: -25px;
     text-align: center;
@@ -86,11 +103,11 @@
     border-radius: 4px;
     border: 1px solid black;
     cursor: pointer;
-
 }
 
 .stepSquare{
     width: 8px;
+    border-radius: 5px;
     height: 40px;
     background: rgb(51, 50, 50);
     position: relative;
@@ -103,10 +120,9 @@
     position: relative;
     right: -45px;
     top: -4px;
-    width: 18px;
+    width: 10px;
     background: grey;
     margin-left: 10px;
-    height: 40px;
     border-radius: 4px;
     cursor: pointer;
 }
@@ -127,3 +143,10 @@
     margin-top: 10px;
     cursor: pointer;
 }
+
+/* @media only screen and (max-width: 600px){
+    .stepSequencer{
+        transform: scale(80%) rotateZ(90deg)
+        translate(25%, 100%);
+    }
+} */

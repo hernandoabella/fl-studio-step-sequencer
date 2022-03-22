@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Secuenciador de pasos</title>
+    <title>🎶 Secuenciador de pasos</title>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="stylesheet" href="./styles.css">
 </head>
@@ -17,104 +17,75 @@
             <div class="play"><i class="fas fa-play"></i></div>
             <div class="pause"><i class="fas fa-pause"></i></div>
             <div class="stop"><i class="fas fa-stop"></i></div>
-            <div class="bpm"><input type="number" placeholder="BPM"></div>
+            <div class="bpm"><input type="number" value="130" placeholder="BPM"><span>BPM</span></div>
         </div>
         
-        <div class="stepLine">
-            <div class="light"></div>
-            <div class="volKnob"></div>
-            <div class="panKnob"></div>
-            <div class="stepSound">Kick</div>
-            <div class="stepSquare"></div>
-            <div class="patSquare patActive"></div>
-            <div class="patSquare"></div>
-            <div class="patSquare"></div>
-            <div class="patSquare"></div>
-            <div class="patSquare patActive"></div>
-            <div class="patSquare"></div>
-            <div class="patSquare "></div>
-            <div class="patSquare"></div>
-            <div class="patSquare patActive"></div>
-            <div class="patSquare"></div>
-            <div class="patSquare"></div>
-            <div class="patSquare"></div>
-            <div class="patSquare patActive"></div>
-            <div class="patSquare"></div>
-            <div class="patSquare "></div>
-            <div class="patSquare"></div>
+        <div class="stepContainer">
+            <div class="stepLine">
+                <div class="light"></div>
+                <div class="volKnob"></div>
+                <div class="panKnob"></div>
+                <div class="stepSound">Kick</div>
+                <div class="stepSquare"></div>
+                <div class="patSquare patActive"></div>
+                <div class="patSquare"></div>
+                <div class="patSquare"></div>
+                <div class="patSquare"></div>
+                <div class="patSquare patActive"></div>
+                <div class="patSquare"></div>
+                <div class="patSquare "></div>
+                <div class="patSquare"></div>
+            </div>
+
+            <div class="stepLine">
+                <div class="light"></div>
+                <div class="volKnob"></div>
+                <div class="panKnob"></div>
+                <div class="stepSound">Clap</div>
+                <div class="stepSquare"></div>
+                <div class="patSquare"></div>
+                <div class="patSquare"></div>
+                <div class="patSquare"></div>
+                <div class="patSquare"></div>
+                <div class="patSquare patActive"></div>
+                <div class="patSquare"></div>
+                <div class="patSquare"></div>
+                <div class="patSquare "></div>
+            </div>
+
+            <div class="stepLine">
+                <div class="light"></div>
+                <div class="volKnob"></div>
+                <div class="panKnob"></div>
+                <div class="stepSound">Hat</div>
+                <div class="stepSquare"></div>
+                <div class="patSquare patActive"></div>
+                <div class="patSquare"></div>
+                <div class="patSquare patActive"></div>
+                <div class="patSquare"></div>
+                <div class="patSquare patActive"></div>
+                <div class="patSquare "></div>
+                <div class="patSquare patActive"></div>
+                <div class="patSquare"></div>
+            </div>
+
+            <div class="stepLine">
+                <div class="light"></div>
+                <div class="volKnob"></div>
+                <div class="panKnob"></div>
+                <div class="stepSound">Snare</div>
+                <div class="stepSquare"></div>
+                <div class="patSquare"></div>
+                <div class="patSquare"></div>
+                <div class="patSquare"></div>
+                <div class="patSquare patActive"></div>
+                <div class="patSquare"></div>
+                <div class="patSquare"></div>
+                <div class="patSquare patActive"></div>
+                <div class="patSquare"></div>
+            </div>
         </div>
 
-        <div class="stepLine">
-            <div class="light"></div>
-            <div class="volKnob"></div>
-            <div class="panKnob"></div>
-            <div class="stepSound">Clap</div>
-            <div class="stepSquare"></div>
-            <div class="patSquare"></div>
-            <div class="patSquare"></div>
-            <div class="patSquare"></div>
-            <div class="patSquare"></div>
-            <div class="patSquare patActive"></div>
-            <div class="patSquare"></div>
-            <div class="patSquare"></div>
-            <div class="patSquare "></div>
-            <div class="patSquare"></div>
-            <div class="patSquare"></div>
-            <div class="patSquare"></div>
-            <div class="patSquare"></div>
-            <div class="patSquare patActive"></div>
-            <div class="patSquare"></div>
-            <div class="patSquare"></div>
-            <div class="patSquare "></div>
-        </div>
-
-        <div class="stepLine">
-            <div class="light"></div>
-            <div class="volKnob"></div>
-            <div class="panKnob"></div>
-            <div class="stepSound">Hat</div>
-            <div class="stepSquare"></div>
-            <div class="patSquare patActive"></div>
-            <div class="patSquare"></div>
-            <div class="patSquare patActive"></div>
-            <div class="patSquare"></div>
-            <div class="patSquare patActive"></div>
-            <div class="patSquare "></div>
-            <div class="patSquare patActive"></div>
-            <div class="patSquare"></div>
-            <div class="patSquare patActive"></div>
-            <div class="patSquare"></div>
-            <div class="patSquare patActive"></div>
-            <div class="patSquare"></div>
-            <div class="patSquare patActive"></div>
-            <div class="patSquare "></div>
-            <div class="patSquare patActive"></div>
-            <div class="patSquare"></div>
-        </div>
-
-        <div class="stepLine">
-            <div class="light"></div>
-            <div class="volKnob"></div>
-            <div class="panKnob"></div>
-            <div class="stepSound">Snare</div>
-            <div class="stepSquare"></div>
-            <div class="patSquare"></div>
-            <div class="patSquare"></div>
-            <div class="patSquare"></div>
-            <div class="patSquare patActive"></div>
-            <div class="patSquare"></div>
-            <div class="patSquare"></div>
-            <div class="patSquare patActive"></div>
-            <div class="patSquare"></div>
-            <div class="patSquare"></div>
-            <div class="patSquare"></div>
-            <div class="patSquare"></div>
-            <div class="patSquare patActive"></div>
-            <div class="patSquare"></div>
-            <div class="patSquare"></div>
-            <div class="patSquare patActive"></div>
-            <div class="patSquare"></div>
-        </div>
     </div>
 
 </body>
